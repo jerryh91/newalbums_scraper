@@ -8,7 +8,11 @@
 import scrapy
 
 
-class NewalbumsScraperItem(scrapy.Item):
+class NewalbumsItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    artist = scrapy.Field()
+    album_name = scrapy.Field()
+    released_year = scrapy.Field()
+    style = scrapy.Field()
+    album_format = scrapy.Field()
+    size =scrapy.Field()
